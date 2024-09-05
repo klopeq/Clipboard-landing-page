@@ -252,6 +252,10 @@ footer .footer-page .row .col-5 img{
         flex-direction: column;
     }
 
+    .btn {
+        padding: 20px;
+    }
+
     header {
         background: url(images/bg-header-mobile.png) center center/cover no-repeat;
         padding: 0 19px 0 19px;
@@ -287,9 +291,8 @@ footer .footer-page .row .col-5 img{
 
     .clipboard-page .devices {
         width: 100px;
-        height: 300px;
+        height: 200px;
         transform: translateX(110px);
-        padding: 0 60px;
     }
 
     .superchage-page .first-row,
@@ -311,7 +314,7 @@ footer .footer-page .row .col-5 img{
     }
 
     footer .footer-page {
-        height: 320px;
+        height: 330px;
     }
 
     footer .footer-page .row {
@@ -326,9 +329,13 @@ footer .footer-page .row .col-5 img{
         margin-bottom: 20px;
     }
 
+    footer .footer-page .row .col-5 {
+        display: flex;
+        justify-content: center;
+    }
+
     footer .footer-page .row .col-5 img{ 
-        text-align: center;
-        transform: translateX(-20px);
+        transform: translateX(-30px);
     }
 }
 

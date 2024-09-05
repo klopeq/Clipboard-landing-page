@@ -16,6 +16,10 @@
     --like-white: hsla(0, 0%, 82%, 0.486);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Utilities Classes */
 .btns {
     display: flex;
@@ -302,6 +306,10 @@ footer .footer-page .row .col-5 img{
         margin-bottom: 60px;
     }
 
+    .clipboard-download-page {
+        padding: 0 20px;
+    }
+
     footer .footer-page {
         height: 320px;
     }
@@ -321,8 +329,6 @@ footer .footer-page .row .col-5 img{
     footer .footer-page .row .col-5 img{ 
         text-align: center;
         transform: translateX(-20px);
-
-        
     }
 }
 

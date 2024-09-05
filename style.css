@@ -1,0 +1,413 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --like-white: hsla(0, 0%, 82%, 0.486);
+}
+
+/* Utilities Classes */
+.btns {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: var(--strong-cyan);
+    box-shadow: 1px 1px 10px var(--strong-cyan);
+}
+
+.secondary-btn {
+    background-color: var(--light-blue);
+    box-shadow: 1px 1px 10px var(--light-blue);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* Header Start */
+header {
+    height: auto;
+    background: url(images/bg-header-desktop.png) center center/cover no-repeat;
+    margin-bottom: 4.1rem;
+    padding: 0 20px;
+    margin-right: 0;
+}
+
+header .header-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .header-page .logo{
+    padding-top: 1.7rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+header .header-page .header-content h1 {
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+header .header-page .header-content p {
+    text-align: center;
+    color: var(--grayish-blue);
+    margin-bottom: 20px;
+}
+
+header .header-page .header-content p span {
+    display: block;
+}
+
+/* Header End */
+
+/* About Start */
+.about-page,
+.superchage-page,
+.clipboard-download-page  {
+    margin-bottom: 6rem;
+    padding: 0 40px
+}
+
+.about-page .title h2,
+.clipboard-page .title h2,
+.superchage-page .title h2,
+.clipboard-download-page .title h2 {
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+.about-page .title p,
+.clipboard-page .title p,
+.superchage-page .title p,
+.clipboard-download-page .title p {
+    color: var(--grayish-blue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-page .title p span,
+.clipboard-page .title p span,
+.clipboard-download-page .title p span {
+    display: block;
+}
+
+.about-page .about-content {
+    display: flex;
+}
+
+.about-page .about-content .picture img {
+    height: 500px;
+    transform: translateX(-90px);
+}
+
+.about-page .about-content .explanation .col-1,
+.about-page .about-content .explanation .col-2,
+.about-page .about-content .explanation .col-3 {
+    padding: 20px 0;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.about-page .about-content .explanation .col-1 h3,
+.about-page .about-content .explanation .col-2 h3,
+.about-page .about-content .explanation .col-3 h3 {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+.about-page .about-content .explanation .col-1 p,
+.about-page .about-content .explanation .col-2 p,
+.about-page .about-content .explanation .col-3 p {
+    color: var(--grayish-blue);
+}
+/* About End */
+
+/* Clipboard-Sec Start */
+.clipboard-page {
+    margin-bottom: 3rem;
+    padding: 0 20px
+}
+
+.clipboard-page .devices {
+    display: flex;
+    justify-content: center;
+}
+/* Clipboard-Sec End */
+
+/* Superchage-Sec Start */
+.superchage-page .first-row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1078px;
+    margin: auto;
+    text-align: center;
+    column-gap: 30px;
+    line-height: 1.6;
+    margin-bottom: 70px;
+}
+
+.superchage-page .first-row .first-col img,
+.superchage-page .first-row .second-col img,
+.superchage-page .first-row .third-col img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.superchage-page .first-row .first-col h3,
+.superchage-page .first-row .second-col h3,
+.superchage-page .first-row .third-col h3 {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+
+.superchage-page .first-row .first-col p,
+.superchage-page .first-row .second-col p,
+.superchage-page .first-row .third-col p {
+    color:var(--grayish-blue);
+}
+
+.superchage-page .second-row {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 0 30px;
+    text-align: center;
+}
+/* Superchage-Sec End */
+
+/* Footer Start */
+footer .footer-page {
+    background-color: var(--like-white);
+    padding: 0 20px;
+}
+
+footer .footer-page .row {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px 70px;
+    color: var(--grayish-blue);
+}
+
+footer .footer-page .row .col-1 img {
+    height: 70px;
+    padding: 0 30px;
+}
+
+footer .footer-page .row .col-2 p,
+footer .footer-page .row .col-3 p {
+    margin-bottom: 10px;
+}
+
+footer .footer-page .row .col-5 {
+    margin-left: 50px;
+}
+
+footer .footer-page .row .col-5 img{
+    padding: 0 6px;
+    margin-top: 15px;
+}
+/* Footer End */
+
+/* Responsive Mobile  */
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    header {
+        background: url(images/bg-header-mobile.png) center center/cover no-repeat;
+        padding: 0 19px 0 19px;
+    }
+
+    .about-page .title p span,
+    .clipboard-page .title p span,
+    .clipboard-download-page .title p span {
+        display: inline;
+    }
+
+    .about-page .about-content {
+        flex-direction: column;
+    }
+
+    .about-page .about-content .picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-page .about-content .picture img {
+        transform: translateX(0px);
+        height: 250px;
+        width: 300px;
+    }
+
+    .about-page .about-content .explanation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clipboard-page .devices {
+        width: 100px;
+        height: 300px;
+        transform: translateX(110px);
+        padding: 0 60px;
+    }
+
+    .superchage-page .first-row,
+    .superchage-page .second-row,
+    footer .footer-page .row {
+        grid-template-columns: 1fr;
+    }
+
+    .superchage-page .second-row {
+        margin-top: 70px;
+    }
+
+    .superchage-page .second-row .picture {
+        margin-bottom: 60px;
+    }
+
+    footer .footer-page {
+        height: 320px;
+    }
+
+    footer .footer-page .row {
+        text-align: center;
+    }
+
+    footer .footer-page .row .col-1 img {
+        margin-bottom: 20px;
+    }
+
+    footer .footer-page .row p {
+        margin-bottom: 20px;
+    }
+
+    footer .footer-page .row .col-5 img{ 
+        text-align: center;
+        transform: translateX(-20px);
+
+        
+    }
+}
+
+/* Responsive Tablet  */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .header-page .header-content h1 span {
+        display: block;
+    }
+
+    .about-page .about-content {
+        flex-direction: column;
+    }
+
+    .about-page .about-content .picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-page .about-content .picture img {
+        transform: translateX(0px);
+        height: 400px;
+        width: 500px;
+    }
+
+    .about-page .about-content .explanation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clipboard-page .devices {
+        width: 100px;
+        height: 300px;
+        transform: translateX(300px);
+        padding: 0 60px;
+    }
+
+    .superchage-page .first-row {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .superchage-page .first-row .third-col {
+        transform: translateX(200px);
+    }
+    
+    .superchage-page .second-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .superchage-page .second-row .picture {
+        padding: 20px;
+    }
+
+    footer .footer-page .row {
+        padding: 20px;
+    }
+
+    footer .footer-page .row .col-1 img {
+        padding: 0px;
+    }
+
+    footer .footer-page .row .col-3 p  {
+        margin-right: 25px;
+    }
+
+    footer .footer-page .row .col-5  {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    footer .footer-page .row .col-5 img {
+        width: 50px;
+        height: 30px;
+    }
+
+    
+}

@@ -127,11 +127,18 @@ header .header-page .header-content p span {
 
 .about-page .about-content {
     display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto; 
 }
-
-.about-page .about-content .picture img {
-    height: 500px;
-    transform: translateX(-90px);
+  
+  .about-page .about-content .picture {
+    flex-basis: 40%;
+    margin-right: 40px;
+}
+  
+  .about-page .about-content .explanation {
+    flex-basis: 60%;
 }
 
 .about-page .about-content .explanation .col-1,
@@ -223,7 +230,7 @@ footer .footer-page .row {
 
 footer .footer-page .row .col-1 img {
     height: 70px;
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 footer .footer-page .row .col-2 p,
@@ -293,6 +300,10 @@ footer .footer-page .row .col-5 img{
         width: 100px;
         height: 200px;
         transform: translateX(110px);
+    }
+
+    .superchage-page .first-row {
+        row-gap: 30px;
     }
 
     .superchage-page .first-row,
@@ -421,6 +432,5 @@ footer .footer-page .row .col-5 img{
         width: 50px;
         height: 30px;
     }
-
-    
 }
+
